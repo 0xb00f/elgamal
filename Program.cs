@@ -16,8 +16,7 @@ namespace elgamal
 	    BigInteger c1, c2;
 	    (c1,c2) = elg.Encrypt(m);
 	    BigInteger result = elg.Decrypt(c1,c2);
-	    Console.WriteLine("result is:");
-	    Console.WriteLine(Encoding.ASCII.GetString(result.ToByteArray()));
+	    Console.WriteLine("result is:\n{0}",Encoding.ASCII.GetString(result.ToByteArray()));
         }
     }
 }
