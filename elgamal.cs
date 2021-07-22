@@ -1,5 +1,6 @@
 using System;
 using System.Numerics;
+using System.Security.Cryptography;
 
 namespace elgamal 
 {
@@ -11,12 +12,15 @@ namespace elgamal
 		private BigInteger gen;
 		private BigInteger h;
 		private BigInteger x;
+		private RNGCryptoServiceProvider rng;
+
 		// constructor
 		public ElGamalCipher(BigInteger prime, BigInteger g)
 		{
 			this.modulus = prime;
 			this.order = prime - new BigInteger(1);
 			this.gen = g;
+			this.rng = new RNGCryptoServiceProvider();
 			this.x = NewRandomValue();
 			this.h = BigInteger.ModPow(g,this.x,prime); 
 		}
@@ -41,12 +45,11 @@ namespace elgamal
 
 			return BigInteger.Multiply(c2,s_inverse) % this.modulus;
 		}
-		// new random value - naive method
+		// new random value - improve
 		private BigInteger NewRandomValue()
 		{
-			Random rand = new Random();
 			Byte[] barr = new Byte[this.modulus.GetByteCount()];
-			rand.NextBytes(barr);
+			this.rng.GetBytes(barr);
 			barr[barr.Length-1] = 0;
 			return new BigInteger(barr);
 		}
