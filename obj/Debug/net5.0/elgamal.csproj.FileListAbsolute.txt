@@ -1,0 +1,16 @@
+/home/boof/elgamal/obj/Debug/net5.0/elgamal.csproj.AssemblyReference.cache
+/home/boof/elgamal/obj/Debug/net5.0/elgamal.GeneratedMSBuildEditorConfig.editorconfig
+/home/boof/elgamal/obj/Debug/net5.0/elgamal.AssemblyInfoInputs.cache
+/home/boof/elgamal/obj/Debug/net5.0/elgamal.AssemblyInfo.cs
+/home/boof/elgamal/obj/Debug/net5.0/elgamal.csproj.CoreCompileInputs.cache
+/home/boof/elgamal/bin/Debug/net5.0/elgamal
+/home/boof/elgamal/bin/Debug/net5.0/elgamal.deps.json
+/home/boof/elgamal/bin/Debug/net5.0/elgamal.runtimeconfig.json
+/home/boof/elgamal/bin/Debug/net5.0/elgamal.runtimeconfig.dev.json
+/home/boof/elgamal/bin/Debug/net5.0/elgamal.dll
+/home/boof/elgamal/bin/Debug/net5.0/ref/elgamal.dll
+/home/boof/elgamal/bin/Debug/net5.0/elgamal.pdb
+/home/boof/elgamal/obj/Debug/net5.0/elgamal.dll
+/home/boof/elgamal/obj/Debug/net5.0/ref/elgamal.dll
+/home/boof/elgamal/obj/Debug/net5.0/elgamal.pdb
+/home/boof/elgamal/obj/Debug/net5.0/elgamal.genruntimeconfig.cache
