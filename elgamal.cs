@@ -33,7 +33,7 @@ namespace elgamal
 			BigInteger y = NewRandomValue();
 			BigInteger s = BigInteger.ModPow(this.h,y,this.modulus);
 			BigInteger c1 = BigInteger.ModPow(this.gen,y,this.modulus);
-			BigInteger c2 = BigInteger.Multiply(m,s) % this.modulus;
+			BigInteger c2 = (m*s) % this.modulus;
 		
 			return (c1,c2);
 		}
@@ -43,7 +43,7 @@ namespace elgamal
 			BigInteger s = BigInteger.ModPow(c1,this.x,this.modulus);
 			BigInteger s_inverse = BigInteger.ModPow(c1,this.order - this.x,this.modulus);
 
-			return BigInteger.Multiply(c2,s_inverse) % this.modulus;
+			return (c2 * s_inverse) % this.modulus;
 		}
 		// new random value - improve
 		private BigInteger NewRandomValue()
